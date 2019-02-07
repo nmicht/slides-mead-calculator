@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Mead Nutriente Calculator</title>
+
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="reveal.js/css/theme/simple.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/custom.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Mead Nutrient Calculator</h1>
+					<h2>My first React App</h2>
+					<p>
+						<small>By <a href="https://michelletorres.mx/acerca">Michelle Torres</a> / <a href="http://twitter.com/nmicht">@nmicht</a></small>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<img src="https://media.giphy.com/media/xT5LMylkz3i6fOn3Ne/giphy.gif" alt="">
+						<p>Let me tell you an story</p>
+					</section>
+
+					<section>
+						<img src="https://media.giphy.com/media/DOCfegc5Ybok0/giphy.gif" alt="">
+						<p>I love <stron>Mead</stron> so I started to brew at home.</p>
+					</section>
+
+					<section>
+						<img src="https://media.giphy.com/media/ql4LidslabKpi/giphy.gif" alt="">
+						<p>Make all the math for nutrient and yeast is complicated.</p>
+					</section>
+
+					<section>
+						<img src="https://media.giphy.com/media/leqmpruKOh3gY/giphy.gif" alt="">
+						<p>There was an amazing calculator, but now is only for premium members.</p>
+					</section>
+
+					<section>
+						<img src="https://media.giphy.com/media/3o7WIMXk4MgSgWF1xC/giphy.gif" alt="">
+						<p>I will build my own.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<img src="https://media.giphy.com/media/3o85xyYOQdcmQSlKU0/giphy.gif" alt="">
+						<p>Do it on React, because is "simple"</p>
+					</section>
+
+					<section>
+						<img src="https://media.giphy.com/media/ulC7OwOVirdWo/giphy.gif" alt="" height="200">
+						<ul>
+							<li>What the f... with states and props?</li>
+							<li>Should I build or not this as a component?</li>
+							<li>Loosing the scope for <strong>this</strong></li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<img src="https://media.giphy.com/media/NPF69q5uoAyzJuCkZF/giphy.gif" alt="">
+					</section>
+
+					<section>
+						<img src="https://media.giphy.com/media/SIooG8eJVcNBS/giphy.gif" alt="">
+						<p>No dependencies!<br>
+						My own form generator, no css framework.</p>
+					</section>
+
+					<section>
+						<img src="https://media.giphy.com/media/l41Yv1PazKT0HTtAs/giphy.gif" alt="" height="200">
+						<ol>
+							<li>Form generator</li>
+							<li>Input range with a beautiful style</li>
+							<li>Responsive</li>
+						</ol>
+					</section>
+
+					<section>
+						<img src="https://media.giphy.com/media/9HQRIttS5C4Za/giphy.gif" alt="">
+						<p>Let's do a demo!</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<img src="https://media.giphy.com/media/YLHwkqayc1j7a/giphy.gif" height="300">
+						<p>What I learned</p>
+					</section>
+
+					<section>
+						Use background gradient for the input styling.
+<pre>background: repeating-linear-gradient(
+    90deg,
+    #ccc 0,
+    #ccc 2px,
+    transparent 0,
+    transparent calc(100%/10 - 1.5px)
+  ) 0.5em 2em no-repeat;
+</pre>
+					</section>
+
+					<section>
+						Use the state only for things that change a "state" on your app, nothing else.
+					</section>
+
+					<section>
+						Use arrow functions if you are going to pass your method to child components.
+<pre>handleChange = (event) => {
+	this.setState({
+	  ...this.state,
+	  [event.target.name]: event.target.value,
+	});
+}
+</pre>
+					</section>
+
+					<section>
+						The pseudo selectors like <pre>::-webkit-slider-runnable-track</pre>
+						can't be grouped, you have to write the same rules for each one.
+					</section>
+
+					<section>
+						Use color palette generators like <a href="http://paletton.com">Paletton.com</a>
+					</section>
+				</section>
+
+				<section>
+					<img src="https://media.giphy.com/media/JGnZEO1DfL24E/giphy.gif" alt="">
+					<p>Send your feedback! Open issues! Show your love!</p>
+				</section>
+
+				<section>
+					<img src="https://media.giphy.com/media/xUA7aN1MTCZx97V1Ic/giphy.gif" alt="">
+					<p>
+						<small>By <a href="https://michelletorres.mx/acerca">Michelle Torres</a> / <a href="http://twitter.com/nmicht">@nmicht</a></small>
+					</p>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="reveal.js/lib/js/head.min.js"></script>
+		<script src="reveal.js/js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'reveal.js/plugin/markdown/marked.js' },
+					{ src: 'reveal.js/plugin/markdown/markdown.js' },
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
